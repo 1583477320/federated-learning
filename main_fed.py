@@ -91,6 +91,7 @@ if __name__ == '__main__':
         # update global weights
         w_glob = FedAvg(w_locals)
 
+
         # copy weight to net_glob
         net_glob.load_state_dict(w_glob)
 
